@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Send a Pug Postcard</title>
+  </head>
+  <main>
+    <section>
+      <h1 style="color: #ADD8E6;">
+        Send a Pug Postcard
+      </h1>
+    </section>
+    <p>
+      Don't know what a pug postcard is?<br>
+      <a href="/what-it-is">Click here.</a>
+    </p>
+
+    <img src="https://s-media-cache-ak0.pinimg.com/564x/a1/70/a1/a170a17a6cc66af6652f2c658b68ff50.jpg" height="125px">
+
+    <section>
+      <div>
+        <form action="/pugs" method="POST" class="the-pug-life" id='pug-postcard-form'>
+
+          <div>
+            <br>
+            <input type="text" name="name" placeholder="Name" id="name">
+          </div>
+
+          <div>
+            <br>
+            <input type="email" name="info" placeholder="email" id="email">
+          </div>
+
+          <div>
+            <label for="message">Your Message Here</label>
+            <br>
+            <textarea name="message" id="message" placeholder="Hi there!" rows="4" cols="40">
+            </textarea>
+          </div>
+
+          <button type="submit" id="send_pug_postcard_button">
+            Send
+          </button>
+
+        </form>
+      </div>
+    </section>
+  </main>
+</html>
