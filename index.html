@@ -1,22 +1,44 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Send a Pug Postcard</title>
   </head>
-  <main>
-    <section>
-      <h1 style="color: #ADD8E6;">
+  <body>
+    <style>
+      html {
+        font-family:'helvetica neue';
+        /*text-align: center;*/
+        font-size: 16px;
+      }
+
+      h1 {
+        color: #ADD8E6;
+        padding-top: 50px;
+      }
+
+      img {
+        height: 180px;
+        float: right;
+      }
+      .form-wrapper {
+        float: left;
+        text-align: left;
+      }
+    </style>
+
+    <main>
+      <h1>
         Send a Pug Postcard
       </h1>
-    </section>
-    <p>
-      Don't know what a pug postcard is?<br>
-      <a href="/what-it-is">Click here.</a>
-    </p>
 
-    <img src="https://s-media-cache-ak0.pinimg.com/564x/a1/70/a1/a170a17a6cc66af6652f2c658b68ff50.jpg" height="125px">
+      <p>
+        Don't know what a pug postcard is?<br>
+        <a href="/what-it-is">Click here.</a>
+      </p><hr>
 
-    <section>
-      <div>
+      <img src="https://s-media-cache-ak0.pinimg.com/564x/a1/70/a1/a170a17a6cc66af6652f2c658b68ff50.jpg">
+
+      <div id='form-wrapper'>
         <form action="/pugs" method="POST" class="the-pug-life" id='pug-postcard-form'>
 
           <div>
@@ -26,13 +48,12 @@
 
           <div>
             <br>
-            <input type="email" name="info" placeholder="email" id="email">
+            <input type="email" name="info" placeholder="Email" id="email">
           </div>
 
           <div>
-            <label for="message">Your Message Here</label>
             <br>
-            <textarea name="message" id="message" placeholder="Hi there!" rows="4" cols="40">
+            <textarea name="message" id="message" placeholder="Your message" rows="4" cols="40">
             </textarea>
           </div>
 
@@ -42,6 +63,7 @@
 
         </form>
       </div>
-    </section>
-  </main>
+      <hr>
+    </main>
+  </body>
 </html>
